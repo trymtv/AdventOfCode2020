@@ -1,6 +1,6 @@
 # Part 1
 inputData = []
-with open("3/inputData.txt", "r") as inputDataData:
+with open("3/input.txt", "r") as inputDataData:
     for line in inputDataData:
         inputData.append(line.strip())
 
@@ -11,8 +11,13 @@ class TreeMap:
         self.x = 0
         self.y = 0
 
-    def hasNext():
-        return y < len(inputData)
+    def hasNext(self):
+        return self.y < len(self.inputData) - 1
+
+    def next(self):
+        return True
 
 
-print(inputData)
+a = 1
+a += 1
+print(a)
