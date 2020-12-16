@@ -1,19 +1,19 @@
 # Part 1
-input = []
-with open("1/input.txt", "r") as inputData:
-    for line in inputData:
-        input.append(int(line.strip()))
+inputData = []
+with open("1/inputData.txt", "r") as inputDataData:
+    for line in inputDataData:
+        inputData.append(int(line.strip()))
 
-for i in range(0, len(input)):
-    for j in range(i, len(input)):
-        if(input[i] + input[j] == 2020):
-            print(input[i], input[j])
-            print(input[i]*input[j])
+for i in range(0, len(inputData)):
+    for j in range(i, len(inputData)):
+        if(inputData[i] + inputData[j] == 2020):
+            print(inputData[i], inputData[j])
+            print(inputData[i]*inputData[j])
 
 # Part 2
-for i in range(0, len(input)):
-    for j in range(i, len(input)):
-        for k in range(j, len(input)):
-            if (input[i] + input[j] + input[k] == 2020):
-                print(input[i], input[j], input[k])
-                print(input[i]*input[j]*input[k])
+for i in range(0, len(inputData)):
+    for j in range(i, len(inputData)):
+        for k in range(j, len(inputData)):
+            if (inputData[i] + inputData[j] + inputData[k] == 2020):
+                print(inputData[i], inputData[j], inputData[k])
+                print(inputData[i]*inputData[j]*inputData[k])

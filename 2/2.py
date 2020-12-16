@@ -1,12 +1,12 @@
 # Part 1
-input = []
-with open("2/input.txt", "r") as inputData:
-    for line in inputData:
-        input.append(line.strip())
+inputData = []
+with open("2/inputData.txt", "r") as inputDataData:
+    for line in inputDataData:
+        inputData.append(line.strip())
 
 correctAmount = 0
 
-for password in input:
+for password in inputData:
     parameters = password.split()
     amounts = parameters[0].split("-")
     amounts = list(map(int, amounts))
@@ -25,7 +25,7 @@ print(correctAmount)
 
 correctAmount = 0
 
-for password in input:
+for password in inputData:
     parameters = password.split()
     locations = parameters[0].split("-")
     locations = list(map(int, locations))
