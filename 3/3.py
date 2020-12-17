@@ -35,3 +35,24 @@ while newMap.hasNext():
 print(treeCount)
 
 # Part 2
+
+treeMaps = []
+treeMaps.append(TreeMap(inputData, 1, 1))
+treeMaps.append(TreeMap(inputData, 3, 1))
+treeMaps.append(TreeMap(inputData, 5, 1))
+treeMaps.append(TreeMap(inputData, 7, 1))
+treeMaps.append(TreeMap(inputData, 1, 2))
+
+treeMul = 0
+
+for elem in treeMaps:
+    treeCount = 0
+    while elem.hasNext():
+        if elem.next() == "#":
+            treeCount += 1
+    if treeMul == 0:
+        treeMul = treeCount
+    else:
+        treeMul *= treeCount
+
+print(treeMul)
