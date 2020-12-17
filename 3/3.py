@@ -1,10 +1,8 @@
 # Part 1
 inputData = []
-with open("3/input.txt", "r") as inputDataData:
-    for line in inputDataData:
+with open("3/input.txt", "r") as inputFile:
+    for line in inputFile:
         inputData.append(line.strip())
-
-print(len(inputData))
 
 
 class TreeMap:

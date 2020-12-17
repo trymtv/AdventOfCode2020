@@ -1,7 +1,7 @@
 # Part 1
 inputData = []
-with open("2/input.txt", "r") as inputDataData:
-    for line in inputDataData:
+with open("2/input.txt", "r") as inputFile:
+    for line in inputFile:
         inputData.append(line.strip())
 
 correctAmount = 0
