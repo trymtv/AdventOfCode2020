@@ -21,3 +21,25 @@ for answers in groups:
     sum += len(answers)
 
 print(sum)
+
+# Part 2
+
+groups = []
+equalAnswers = None
+for elem in inputData:
+    if equalAnswers == None:
+        equalAnswers = list(elem)
+    elif elem == "":
+        groups.append(equalAnswers)
+        equalAnswers = None
+    else:
+        for answer in equalAnswers:
+            if not answer in elem:
+                equalAnswers.remove(answer)
+groups.append(equalAnswers)
+
+sum = 0
+for elem in groups:
+    sum += len(elem)
+
+print(sum)
