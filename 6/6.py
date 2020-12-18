@@ -1,3 +1,4 @@
+# Part 1
 inputData = []
 with open("6/input.txt", "r") as inputFile:
     for line in inputFile:
@@ -13,6 +14,7 @@ for elem in inputData:
     else:
         groups.append(answerSet)
         answerSet = set()
+groups.append(answerSet)
 
 sum = 0
 for answers in groups:
