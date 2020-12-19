@@ -24,19 +24,24 @@ print(sum)
 
 # Part 2
 
+
+def intersection(lst1, lst2):
+    return set(lst1) & set(lst2)
+
+
 groups = []
 equalAnswers = None
+
 for elem in inputData:
     if equalAnswers == None:
-        equalAnswers = list(elem)
+        equalAnswers = elem
     elif elem == "":
         groups.append(equalAnswers)
         equalAnswers = None
     else:
-        for answer in equalAnswers:
-            if not answer in elem:
-                equalAnswers.remove(answer)
+        equalAnswers = intersection(equalAnswers, elem)
 groups.append(equalAnswers)
+
 
 sum = 0
 for elem in groups:
