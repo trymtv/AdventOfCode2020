@@ -41,3 +41,22 @@ for elem in inputInstructions:
 
 print(shipLocation)
 print(abs(shipLocation[0])+abs(shipLocation[1]))
+
+# Part 2
+markerLocation = [10, 1]
+shipLocation = [0, 0]
+directions["F"] = markerLocation
+
+for elem in inputInstructions:
+    if elem[0] == "R" or elem[0] == "L":
+        for i in range(0, elem[1], 90):
+            directions["F"] = rotate(directions["F"], directions[elem[0]])
+    elif elem[0] == "F":
+        for i, e in enumerate(directions[elem[0]]):
+            shipLocation[i] += e*elem[1]
+    elif elem[0] in directions:
+        for i, e in enumerate(directions[elem[0]]):
+            directions["F"][i] += e*elem[1]
+
+print(shipLocation)
+print(abs(shipLocation[0])+abs(shipLocation[1]))
