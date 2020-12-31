@@ -2,7 +2,7 @@ import copy
 
 # Part 1
 inputData = []
-with open("8/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         line = line.strip().split()
         inputData.append(line + [False])

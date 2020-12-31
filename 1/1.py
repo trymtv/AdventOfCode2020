@@ -1,6 +1,6 @@
 # Part 1
 inputData = []
-with open("1/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         inputData.append(int(line.strip()))
 

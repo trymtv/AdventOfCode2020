@@ -20,7 +20,7 @@ def passToCol(code, l, u):
 
 
 inputData = []
-with open("5/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         inputData.append(line.strip())
 

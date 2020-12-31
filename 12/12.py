@@ -1,6 +1,6 @@
 inputInstructions = []
 
-with open("12/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         inputInstructions.append([line[:1], int(line[1:])])
 

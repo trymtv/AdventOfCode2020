@@ -1,7 +1,7 @@
 # Part 1
 inputData = []
 newPass = {}
-with open("4/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         if line != "\n":
             for elem in line.split():

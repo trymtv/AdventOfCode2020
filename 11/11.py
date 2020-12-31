@@ -3,7 +3,7 @@ import copy
 # Part 1
 inputData = []
 
-with open("11/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         inputData.append(list(line.strip()))
 

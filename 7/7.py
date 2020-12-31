@@ -3,7 +3,7 @@ import re
 
 # Part 1
 inputData = {}
-with open("7/input.txt", "r") as inputFile:
+with open("input.txt", "r") as inputFile:
     for line in inputFile:
         line = re.sub(" bags| bag", "", line)
         line = re.split(" contain |, ", line.strip("\n."))
